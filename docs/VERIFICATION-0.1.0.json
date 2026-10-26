@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-26",
+  "status": "assistance-only first candidate",
+  "builds": {
+    "phigros": {
+      "artifact": "Phigros-Assist-LSPosed-v0.1.0-TEST.apk",
+      "sha256": "9b83985ae343dd5741cffc4b186c903da00cfeff9addd4b6fbf8a49c6c1b2d4b",
+      "bytes": 28940,
+      "package": "org.rhythmlab.assist.phigros",
+      "scope": "com.PigeonGames.Phigros",
+      "recommended_scope_resource_array": true,
+      "signature_verified": true,
+      "no_native_libraries": true,
+      "no_requested_permissions": true,
+      "device_tested": false,
+      "full_game_skin_replacement": false
+    },
+    "phira": {
+      "artifact": "Phira-Assist-LSPosed-v0.1.0-TEST.apk",
+      "sha256": "fcb73c22c25ebe418c65e57f26cc5b41c1a5f2c710df32b38dead4c74266c03c",
+      "bytes": 28940,
+      "package": "org.rhythmlab.assist.phira",
+      "scope": "org.flos.phira",
+      "recommended_scope_resource_array": true,
+      "signature_verified": true,
+      "no_native_libraries": true,
+      "no_requested_permissions": true,
+      "device_tested": false,
+      "full_game_skin_replacement": false
+    }
+  },
+  "capability_audit": {
+    "phigros": {
+      "owned_classes": 53,
+      "native_method_definitions": 0,
+      "forbidden_network_or_injection_method_references": 0,
+      "method_references": 449,
+      "scope": "com.PigeonGames.Phigros",
+      "no_native_libraries": true,
+      "no_host_engine_or_old_module_classes": true,
+      "source_hook_allowlist": [
+        "android.app.Application.attach"
+      ],
+      "device_tested": false
+    },
+    "phira": {
+      "owned_classes": 53,
+      "native_method_definitions": 0,
+      "forbidden_network_or_injection_method_references": 0,
+      "method_references": 449,
+      "scope": "org.flos.phira",
+      "no_native_libraries": true,
+      "no_host_engine_or_old_module_classes": true,
+      "source_hook_allowlist": [
+        "android.app.Application.attach"
+      ],
+      "device_tested": false
+    }
+  },
+  "host_tests": {
+    "passed": true,
+    "cases": [
+      "callback interval mean/reset/nonmonotonic input",
+      "unsafe absolute/traversal/backslash/control-character names rejected",
+      "case collisions and executable entries rejected",
+      "CRC corruption red baseline reproduced then rejected after fix",
+      "standard eight-image Phira metadata and atlas checked",
+      "unknown resource bundle not labeled compatible",
+      "non-member resource reads rejected"
+    ]
+  },
+  "device_tested": false,
+  "android_ui_tested": false,
+  "real_lsposed_loading_tested": false,
+  "gameplay_or_skin_application_tested": false,
+  "full_phigros_skin_replacement": false,
+  "no_existing_game_or_module_modified": true
+}
