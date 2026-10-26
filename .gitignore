@@ -1,0 +1,14 @@
+out/
+build/
+__pycache__/
+*.pyc
+*.apk
+*.p12
+*.jks
+*.keystore
+*.key
+*.pem
+*.log
+.env*
+password*
+local.properties

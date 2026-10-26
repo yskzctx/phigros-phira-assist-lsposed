@@ -1,0 +1,4 @@
+{
+  "phigros": {"name":"Phigros","host":"com.PigeonGames.Phigros","module":"org.rhythmlab.assist.phigros","activity_prefix":"com.unity3d.player.UnityPlayerActivity","reference_version":"4.0.1 (157)","phira":false},
+  "phira": {"name":"Phira","host":"org.flos.phira","module":"org.rhythmlab.assist.phira","activity_prefix":"org.flos.phira.MainActivity","reference_version":"0.8.2 (39)","phira":true}
+}
