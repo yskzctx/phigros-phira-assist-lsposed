@@ -1,5 +1,5 @@
 {
-  "source_commit": "64a4ddbe903529de09d63d683ea0a72c141f3d6a",
+  "source_commit": "0e12adae3dafbc69f0bca893da3c6ab4e71da2e5",
   "hash_basis": "committed Git blob bytes",
   "files": [
     {
@@ -8,7 +8,7 @@
     },
     {
       "path": "DISCLAIMER.md",
-      "sha256": "f01de7f47b61c51edaa769462605f191265dbfa2f0b9264a360acec4ec738e96"
+      "sha256": "524d72a622b08d94c988fa4594a344e4a31cf7384ab09e521d3a19b637107118"
     },
     {
       "path": "LICENSE",
@@ -16,47 +16,67 @@
     },
     {
       "path": "README.md",
-      "sha256": "ad2fd217677557af7ed058aa89b3d5172e4b8fbfba853a17787861476ada0007"
+      "sha256": "78de5dce1e3f5bb2806299f76cf1e22887b02b5b80fa8b21567c9b769928f2f8"
     },
     {
       "path": "audit.py",
-      "sha256": "528031a4efcf96d9ac0802b1cba3419d3e65777c7cd03318e34d5f460f11f470"
+      "sha256": "51f64ee1063740b068e9795e538255ac969a55865d4135cf8cef90d7f1629a88"
     },
     {
       "path": "build.py",
-      "sha256": "e397c843860f279c30331d9c8b967c5e6a83192b2388c096603872a0074c4586"
+      "sha256": "fc5149a6888d5b55440113f39b626cb5f0cbf55b320846ad866731dbae946648"
     },
     {
       "path": "common/AssistPanel.java",
-      "sha256": "221f8d37756b6ff6e9a46c3d3201ddbbdaf3f04730af9601241908bee0587677"
+      "sha256": "87288963487ff465632673be769eeb1b3cbf0fafc9e1242048cb37b85963d796"
     },
     {
       "path": "common/Dashboard.java",
-      "sha256": "806d7d437659b277648c51a12b3aa8572cd28b229c17cfccdc5697e994a21b32"
+      "sha256": "1d1b396a18cd31bd3b954244098d22d1dd510edd69b67d6ddf904b453da8ee7d"
     },
     {
       "path": "common/Entry.java",
-      "sha256": "42eb36c247a772ddb700a97cfd978cdbe56fef293edb4e6984bbe8c96d99e642"
+      "sha256": "6ba5c549bce4700f8a3b42f0fc1e2c3f7ba8858a91bbecfd416eb82d6ad5493d"
     },
     {
       "path": "common/FrameStats.java",
       "sha256": "e00a23f68a56d51b222111ae881d4cff744f08d3d4432d3b44263c25c58f8d80"
     },
     {
+      "path": "common/HudSample.java",
+      "sha256": "282153a0d25ebc8e2cb5b294c8a0451c6435e7267e2e0351e335f5d092d13f4a"
+    },
+    {
+      "path": "common/LiveHud.java",
+      "sha256": "c8f83136d4cdecb8e3ddaaf981ef9dbded5a6d222227bc843fecec6825b6c13a"
+    },
+    {
       "path": "common/Notice.java",
-      "sha256": "5a7d1793e17c63a31ca4c1de35228b1b53e60159745aa046d812ea211952467a"
+      "sha256": "cc65c3f89762f8cc09428b19db22c23d071d36b3c03f62cc1ab34673e8f3adc2"
+    },
+    {
+      "path": "common/ReadOnlySource.java",
+      "sha256": "8e2a22fa0f7a5731c30bf7219e54f70dbde03bc8e4a17b2651c3ca6dab4372a6"
     },
     {
       "path": "common/SkinArchive.java",
       "sha256": "64d37ec6973a35d30ec7f171c675585ec880ba4e58871ed1f984f1f018e83d68"
     },
     {
+      "path": "docs/HUD-ADAPTERS.md",
+      "sha256": "68e366733efd37e729587565cdb5124dfddb7c3aff1d290b65052dc90b9a11bc"
+    },
+    {
       "path": "docs/INSTALL-0.1.0.md",
       "sha256": "4687ce91e544920bbe2262e4d6b6859e5ef9d03ce98387249719d1062534b1df"
     },
     {
+      "path": "docs/INSTALL-0.2.0.md",
+      "sha256": "5b04c7365a8a1f6ad6dc258f8493b6eef16d7e1706269da8f61aef271ce79a8c"
+    },
+    {
       "path": "docs/ROADMAP.md",
-      "sha256": "ddc63802ee90cf265bf1768b8c340d6f26dd143398290b6caf3bff11a6153bbf"
+      "sha256": "b8fbec4a035f1b0bb99ad0747fe9ccc7a3fce7d61d0e55c22db46f3dec1fcb54"
     },
     {
       "path": "docs/SKIN-RESEARCH.md",
@@ -67,16 +87,48 @@
       "sha256": "21aeb1e55b69cd56083592ec2a7459497a64c2d2f6833bc003abd392c32168a0"
     },
     {
+      "path": "docs/VERIFICATION-0.2.0.json",
+      "sha256": "6a69e55c6fba5e987d2529e1514b6b55350ffd23b7443c8acabf23facaff6c7e"
+    },
+    {
+      "path": "native/exports.map",
+      "sha256": "36b4ba666694acc9f65eccb105c75d6019493a4c82ef220979080bc3ca563b5b"
+    },
+    {
+      "path": "native/observer-core.h",
+      "sha256": "63392ac7c37a2069c8de4becf8f1da8cf58aa05c3e1323f3d75393ae87ac4867"
+    },
+    {
+      "path": "native/observer.c",
+      "sha256": "e010de8e0f6a451ee8465763d7144cc433edb8951eaf667d34cc5752ad97e4f1"
+    },
+    {
+      "path": "native/profiles.json",
+      "sha256": "852736831c5488f620a0e18a0befe7c98bfdd48a38c4d832992002c076dbd209"
+    },
+    {
+      "path": "profile_extract.py",
+      "sha256": "cdfb196e3fa5b94101f07ee08c510735ccf7ec4abaaf041480392e5376944ad1"
+    },
+    {
       "path": "targets.json",
       "sha256": "fb3cab961d8b3a0fc84d7cb7f0a82d3f4f413d625e13eddd08d61dc5573a8fd4"
     },
     {
       "path": "test.py",
-      "sha256": "9351467c1d698aab65e77b4174c6f4a06785aa01df53cf9f3754d7f6de4ad93d"
+      "sha256": "52bf33f0f1a048209d726a5938c708429d245c34cb6770be41a71ec34a423cf7"
     },
     {
       "path": "tests/CoreTest.java",
       "sha256": "3042540b05ecb3e9b5ca47b76846f31d06b42931f7553a66584df65e2ef8f6a3"
+    },
+    {
+      "path": "tests/HudSampleTest.java",
+      "sha256": "5c4b1587d1567fed9a155c1b118f752951c8a7c38090d7af08550ba880989a43"
+    },
+    {
+      "path": "tests/observer_test.c",
+      "sha256": "6964b408cc7f87ba109b9e45f6e2e391d3109ba5286b6a9dd3b5a07b02c1e9ff"
     }
   ],
   "private_keys_or_user_resources_included": false
