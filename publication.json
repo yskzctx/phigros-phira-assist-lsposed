@@ -1,0 +1,55 @@
+{
+  "repository": "https://github.com/yskzctx/phigros-phira-assist-lsposed",
+  "release": "https://github.com/yskzctx/phigros-phira-assist-lsposed/releases/tag/v0.1.0-pre.1",
+  "tag": "v0.1.0-pre.1",
+  "date": "2026-10-26",
+  "source_commit": "64a4ddbe903529de09d63d683ea0a72c141f3d6a",
+  "published": true,
+  "prerelease": true,
+  "draft": false,
+  "device_tested": false,
+  "assets": [
+    {
+      "name": "Phigros-Assist-LSPosed-v0.1.0-TEST.apk",
+      "url": "https://github.com/yskzctx/phigros-phira-assist-lsposed/releases/download/v0.1.0-pre.1/Phigros-Assist-LSPosed-v0.1.0-TEST.apk",
+      "bytes": 33036,
+      "sha256": "da56a04a19ed7f9248305c45f2892d751ded3c8e91f9a00e973b8a92515f77db",
+      "anonymous_full_download_verified": true
+    },
+    {
+      "name": "Phira-Assist-LSPosed-v0.1.0-TEST.apk",
+      "url": "https://github.com/yskzctx/phigros-phira-assist-lsposed/releases/download/v0.1.0-pre.1/Phira-Assist-LSPosed-v0.1.0-TEST.apk",
+      "bytes": 33036,
+      "sha256": "47580b67b0b6b6b7760f3a689326d392112cd00da412ed5466ab5bd305cbd57a",
+      "anonymous_full_download_verified": true
+    },
+    {
+      "name": "INSTALL-0.1.0.md",
+      "url": "https://github.com/yskzctx/phigros-phira-assist-lsposed/releases/download/v0.1.0-pre.1/INSTALL-0.1.0.md",
+      "bytes": 2462,
+      "sha256": "4687ce91e544920bbe2262e4d6b6859e5ef9d03ce98387249719d1062534b1df",
+      "anonymous_full_download_verified": true
+    },
+    {
+      "name": "DISCLAIMER.md",
+      "url": "https://github.com/yskzctx/phigros-phira-assist-lsposed/releases/download/v0.1.0-pre.1/DISCLAIMER.md",
+      "bytes": 1217,
+      "sha256": "f01de7f47b61c51edaa769462605f191265dbfa2f0b9264a360acec4ec738e96",
+      "anonymous_full_download_verified": true
+    },
+    {
+      "name": "VERIFICATION-0.1.0.json",
+      "url": "https://github.com/yskzctx/phigros-phira-assist-lsposed/releases/download/v0.1.0-pre.1/VERIFICATION-0.1.0.json",
+      "bytes": 2682,
+      "sha256": "21aeb1e55b69cd56083592ec2a7459497a64c2d2f6833bc003abd392c32168a0",
+      "anonymous_full_download_verified": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/yskzctx/phigros-phira-assist-lsposed/releases/download/v0.1.0-pre.1/SHA256SUMS.txt",
+      "bytes": 461,
+      "sha256": "c6ca4e9e168300cd347c933641c2028edf0fe5fd5188b41b51452afbf610c994",
+      "anonymous_full_download_verified": true
+    }
+  ]
+}

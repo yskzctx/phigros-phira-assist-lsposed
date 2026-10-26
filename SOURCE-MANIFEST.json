@@ -1,0 +1,83 @@
+{
+  "source_commit": "64a4ddbe903529de09d63d683ea0a72c141f3d6a",
+  "hash_basis": "committed Git blob bytes",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "ae33db9fdfd895d00c80a5a7484d2269e2f10d0c9a7b477d713ef94bb9e3f652"
+    },
+    {
+      "path": "DISCLAIMER.md",
+      "sha256": "f01de7f47b61c51edaa769462605f191265dbfa2f0b9264a360acec4ec738e96"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "92512c96d9d058c62930b1a8a9f6da3e4b4287b5a287a19a2031c43ab4462555"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ad2fd217677557af7ed058aa89b3d5172e4b8fbfba853a17787861476ada0007"
+    },
+    {
+      "path": "audit.py",
+      "sha256": "528031a4efcf96d9ac0802b1cba3419d3e65777c7cd03318e34d5f460f11f470"
+    },
+    {
+      "path": "build.py",
+      "sha256": "e397c843860f279c30331d9c8b967c5e6a83192b2388c096603872a0074c4586"
+    },
+    {
+      "path": "common/AssistPanel.java",
+      "sha256": "221f8d37756b6ff6e9a46c3d3201ddbbdaf3f04730af9601241908bee0587677"
+    },
+    {
+      "path": "common/Dashboard.java",
+      "sha256": "806d7d437659b277648c51a12b3aa8572cd28b229c17cfccdc5697e994a21b32"
+    },
+    {
+      "path": "common/Entry.java",
+      "sha256": "42eb36c247a772ddb700a97cfd978cdbe56fef293edb4e6984bbe8c96d99e642"
+    },
+    {
+      "path": "common/FrameStats.java",
+      "sha256": "e00a23f68a56d51b222111ae881d4cff744f08d3d4432d3b44263c25c58f8d80"
+    },
+    {
+      "path": "common/Notice.java",
+      "sha256": "5a7d1793e17c63a31ca4c1de35228b1b53e60159745aa046d812ea211952467a"
+    },
+    {
+      "path": "common/SkinArchive.java",
+      "sha256": "64d37ec6973a35d30ec7f171c675585ec880ba4e58871ed1f984f1f018e83d68"
+    },
+    {
+      "path": "docs/INSTALL-0.1.0.md",
+      "sha256": "4687ce91e544920bbe2262e4d6b6859e5ef9d03ce98387249719d1062534b1df"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "sha256": "ddc63802ee90cf265bf1768b8c340d6f26dd143398290b6caf3bff11a6153bbf"
+    },
+    {
+      "path": "docs/SKIN-RESEARCH.md",
+      "sha256": "4b6d55722369fedd9320770ce0686561d3b1c6a5b8e7d4990c02dfcbe9ae469c"
+    },
+    {
+      "path": "docs/VERIFICATION-0.1.0.json",
+      "sha256": "21aeb1e55b69cd56083592ec2a7459497a64c2d2f6833bc003abd392c32168a0"
+    },
+    {
+      "path": "targets.json",
+      "sha256": "fb3cab961d8b3a0fc84d7cb7f0a82d3f4f413d625e13eddd08d61dc5573a8fd4"
+    },
+    {
+      "path": "test.py",
+      "sha256": "9351467c1d698aab65e77b4174c6f4a06785aa01df53cf9f3754d7f6de4ad93d"
+    },
+    {
+      "path": "tests/CoreTest.java",
+      "sha256": "3042540b05ecb3e9b5ca47b76846f31d06b42931f7553a66584df65e2ef8f6a3"
+    }
+  ],
+  "private_keys_or_user_resources_included": false
+}
