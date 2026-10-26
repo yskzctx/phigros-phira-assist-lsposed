@@ -1,0 +1,30 @@
+{
+  "phigros": {
+    "version": 157,
+    "library": "libil2cpp.so",
+    "symbol": "il2cpp_domain_get",
+    "sha256": "511e15b9324c171b585ae954e87266437b5de439289918331d1afce9c2b88433",
+    "rvas": [
+      30964308
+    ],
+    "prefixes": [
+      "ffc300d1fe5701a9f44f02a9343701f0"
+    ]
+  },
+  "phira": {
+    "version": 39,
+    "library": "libphira.so",
+    "symbol": "Java_quad_1native_QuadNative_setDataPath",
+    "sha256": "5c2c484265d05b36e792fba328244b195360e799da296292a569446b42dee782",
+    "rvas": [
+      14379896,
+      14455048,
+      14455432
+    ],
+    "prefixes": [
+      "ff8301d1e923026dfd7b03a9f65704a9",
+      "ff8302d1fd7b08a9f44f09a9fd030291",
+      "ef3bb66ded33016deb2b026de923036d"
+    ]
+  }
+}

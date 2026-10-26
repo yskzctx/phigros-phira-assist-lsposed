@@ -1,0 +1,4 @@
+{
+ global: native_init; JNI_OnLoad; Java_org_rhythmlab_assist_ReadOnlySource_read;
+ local: *;
+};

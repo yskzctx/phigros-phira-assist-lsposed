@@ -14,3 +14,8 @@ with zipfile.ZipFile(fixture,'w')as z:
 classes=a.out/'test-classes';classes.mkdir(exist_ok=True)
 subprocess.run(['javac','--release','8','-encoding','UTF-8','-d',str(classes),str(root/'common/FrameStats.java'),str(root/'common/SkinArchive.java'),str(root/'tests/CoreTest.java')],check=True)
 subprocess.run(['java','-Djava.io.tmpdir='+str(a.out.resolve()),'-cp',str(classes),'org.rhythmlab.assist.CoreTest',str(fixture)],check=True)
+subprocess.run(['javac','--release','8','-encoding','UTF-8','-d',str(classes),str(root/'common/HudSample.java'),str(root/'tests/HudSampleTest.java')],check=True)
+subprocess.run(['java','-cp',str(classes),'org.rhythmlab.assist.HudSampleTest'],check=True)
+observer=a.out/'observer-test.exe'
+subprocess.run(['gcc','-std=c11','-Wall','-Wextra','-Werror','-pthread',str(root/'tests/observer_test.c'),'-o',str(observer),'-lm'],check=True)
+subprocess.run([str(observer.resolve())],check=True)

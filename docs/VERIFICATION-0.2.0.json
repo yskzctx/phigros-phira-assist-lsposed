@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-26",
+  "status": "read-only live HUD candidate; real device not tested",
+  "builds": {
+    "phigros": {
+      "artifact": "Phigros-Assist-LSPosed-v0.2.0-HUD-TEST.apk",
+      "sha256": "bfa663c30f25ddf82de66b6f81657299b14462ff58fe136ed0c322e94c08730f",
+      "bytes": 65949,
+      "package": "org.rhythmlab.assist.phigros",
+      "scope": "com.PigeonGames.Phigros",
+      "recommended_scope_resource_array": true,
+      "signature_verified": true,
+      "independent_read_only_observer": true,
+      "game_elf_sha256": "511e15b9324c171b585ae954e87266437b5de439289918331d1afce9c2b88433",
+      "alignment_16kb": true,
+      "no_requested_permissions": true,
+      "device_tested": false,
+      "full_game_skin_replacement": false
+    },
+    "phira": {
+      "artifact": "Phira-Assist-LSPosed-v0.2.0-HUD-TEST.apk",
+      "sha256": "8c5029a276a00609f01c67f712e272b7a8b84a7e76b93af97a8640e8b4be15b1",
+      "bytes": 70045,
+      "package": "org.rhythmlab.assist.phira",
+      "scope": "org.flos.phira",
+      "recommended_scope_resource_array": true,
+      "signature_verified": true,
+      "independent_read_only_observer": true,
+      "game_elf_sha256": "5c2c484265d05b36e792fba328244b195360e799da296292a569446b42dee782",
+      "alignment_16kb": true,
+      "no_requested_permissions": true,
+      "device_tested": false,
+      "full_game_skin_replacement": false
+    }
+  },
+  "capability_audit": {
+    "phigros": {
+      "owned_classes": 67,
+      "native_method_definitions": [
+        [
+          "Lorg/rhythmlab/assist/ReadOnlySource;",
+          "read"
+        ]
+      ],
+      "forbidden_network_or_injection_method_references": 0,
+      "method_references": 570,
+      "scope": "com.PigeonGames.Phigros",
+      "read_only_native_exports": [
+        "native_init",
+        "Java_org_rhythmlab_assist_ReadOnlySource_read",
+        "JNI_OnLoad"
+      ],
+      "no_host_engine_or_old_module_classes": true,
+      "source_java_hook_allowlist": [
+        "android.app.Application.attach"
+      ],
+      "native_observer_hooks": 1,
+      "device_tested": false
+    },
+    "phira": {
+      "owned_classes": 67,
+      "native_method_definitions": [
+        [
+          "Lorg/rhythmlab/assist/ReadOnlySource;",
+          "read"
+        ]
+      ],
+      "forbidden_network_or_injection_method_references": 0,
+      "method_references": 570,
+      "scope": "org.flos.phira",
+      "read_only_native_exports": [
+        "native_init",
+        "Java_org_rhythmlab_assist_ReadOnlySource_read",
+        "JNI_OnLoad"
+      ],
+      "no_host_engine_or_old_module_classes": true,
+      "source_java_hook_allowlist": [
+        "android.app.Application.attach"
+      ],
+      "native_observer_hooks": 3,
+      "device_tested": false
+    }
+  },
+  "host_tests": {
+    "passed": true,
+    "cases": [
+      "original arguments forwarded once; original objects unchanged",
+      "Phigros real P/G/Bad/Miss snapshot and invalid-count rejection",
+      "Phira event-only observation; protected JudgeInner bytes unchanged",
+      "reset/retry/chart change; partial late-attach metadata",
+      "20000-point bound; display downsampling extrema and endpoints",
+      "weighted observed ACC; empty/malformed/stale packets",
+      "existing skin ZIP/CRC/path traversal and frame statistics regression"
+    ]
+  },
+  "device_tested": false,
+  "android_ui_tested": false,
+  "real_lsposed_loading_tested": false,
+  "gameplay_counters_compared_to_real_results": false,
+  "touch_pass_through_device_verified": false,
+  "game_saves_read_or_modified": false,
+  "old_control_libraries_included": false,
+  "full_phigros_skin_replacement": false
+}

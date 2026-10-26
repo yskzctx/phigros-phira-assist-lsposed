@@ -1,0 +1,12 @@
+package org.rhythmlab.assist;
+import android.content.Context;import android.content.pm.*;import android.os.Process;import java.io.*;import java.security.MessageDigest;import java.util.*;import java.util.zip.*;
+/** Validates the exact tested ELF before loading a strictly read-only observer. */
+public final class ReadOnlySource {
+ private static volatile boolean started,loaded;private static volatile String detail="观察器尚未启动";
+ public static synchronized void start(Context context){if(started)return;started=true;final Context app=context;new Thread(()->{try{PackageInfo pkg=app.getPackageManager().getPackageInfo(Target.HOST,0);if(pkg.versionCode!=Target.VERSION||!Process.is64Bit()){detail="当前版本或架构不在已核对范围内";return;}if(!verified(pkg.applicationInfo)){detail="游戏原生库与已核对样本不同：HUD未接入";return;}System.loadLibrary("assist_observer");loaded=true;detail="等待LSPosed原生接口及游戏判定";}catch(Throwable e){detail="只读观察器未能加载（"+e.getClass().getSimpleName()+"）";}},"Assist-read-only-profile").start();}
+ private static boolean verified(ApplicationInfo a)throws Exception{File unpacked=new File(a.nativeLibraryDir,Target.LIBRARY);if(unpacked.isFile())try(InputStream in=new FileInputStream(unpacked)){return hash(in).equals(Target.ELF_SHA256);}ArrayList<String> paths=new ArrayList<>();paths.add(a.sourceDir);if(a.splitSourceDirs!=null)Collections.addAll(paths,a.splitSourceDirs);for(String path:paths)try(ZipFile zip=new ZipFile(path)){ZipEntry entry=zip.getEntry("lib/arm64-v8a/"+Target.LIBRARY);if(entry!=null)try(InputStream in=zip.getInputStream(entry)){return hash(in).equals(Target.ELF_SHA256);}}return false;}
+ private static String hash(InputStream in)throws Exception{MessageDigest digest=MessageDigest.getInstance("SHA-256");byte[] buffer=new byte[65536];int n;while((n=in.read(buffer))!=-1)digest.update(buffer,0,n);StringBuilder result=new StringBuilder();for(byte b:digest.digest())result.append(String.format(Locale.ROOT,"%02x",b&255));return result.toString();}
+ private static native long[] read();
+ public static HudSample sample(){if(!loaded)return HudSample.parse(null);try{return HudSample.parse(read());}catch(Throwable error){loaded=false;detail="观察器读取失败，统计已停用";return HudSample.parse(null);}}
+ public static String status(HudSample s){if(!loaded)return detail;if(s.stage<0)return "原生观察器校验／挂接失败（"+s.stage+"）";if(s.stage!=5)return "等待LSPosed原生接口："+s.stage;if(!s.available)return "已接入，等待开始游玩";if(s.age>1500)return "暂未更新 · 保留末次统计";if((s.partial&1)!=0)return "中途接入 · 仅统计本段判定";if((s.partial&2)!=0)return "曲线从接入时开始记录";return "只读实时统计";}
+}
