@@ -4,8 +4,8 @@
   "builds": {
     "phigros": {
       "artifact": "Phigros-Assist-LSPosed-v0.1.0-TEST.apk",
-      "sha256": "9b83985ae343dd5741cffc4b186c903da00cfeff9addd4b6fbf8a49c6c1b2d4b",
-      "bytes": 28940,
+      "sha256": "da56a04a19ed7f9248305c45f2892d751ded3c8e91f9a00e973b8a92515f77db",
+      "bytes": 33036,
       "package": "org.rhythmlab.assist.phigros",
       "scope": "com.PigeonGames.Phigros",
       "recommended_scope_resource_array": true,
@@ -17,8 +17,8 @@
     },
     "phira": {
       "artifact": "Phira-Assist-LSPosed-v0.1.0-TEST.apk",
-      "sha256": "fcb73c22c25ebe418c65e57f26cc5b41c1a5f2c710df32b38dead4c74266c03c",
-      "bytes": 28940,
+      "sha256": "47580b67b0b6b6b7760f3a689326d392112cd00da412ed5466ab5bd305cbd57a",
+      "bytes": 33036,
       "package": "org.rhythmlab.assist.phira",
       "scope": "org.flos.phira",
       "recommended_scope_resource_array": true,
@@ -31,10 +31,10 @@
   },
   "capability_audit": {
     "phigros": {
-      "owned_classes": 53,
+      "owned_classes": 56,
       "native_method_definitions": 0,
       "forbidden_network_or_injection_method_references": 0,
-      "method_references": 449,
+      "method_references": 462,
       "scope": "com.PigeonGames.Phigros",
       "no_native_libraries": true,
       "no_host_engine_or_old_module_classes": true,
@@ -44,10 +44,10 @@
       "device_tested": false
     },
     "phira": {
-      "owned_classes": 53,
+      "owned_classes": 56,
       "native_method_definitions": 0,
       "forbidden_network_or_injection_method_references": 0,
-      "method_references": 449,
+      "method_references": 462,
       "scope": "org.flos.phira",
       "no_native_libraries": true,
       "no_host_engine_or_old_module_classes": true,
